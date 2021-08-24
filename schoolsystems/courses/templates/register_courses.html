@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AkiraChix School System</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button>Submit</button>
+     </form>
+     <style>
+         
+         h1{
+             color: white;
+             text-align: center;
+             margin-top: 0px;
+             
+         }
+         body{
+             background-color: blueviolet;
+             font-size: 16px;
+            
+         }
+         form{
+             width: 40%;
+             background-color: wheat;
+            padding: 20px;
+             margin-left: 28%;
+             }
+         input{
+
+            display: flex;
+            text-emphasis: center;
+            margin-left: 40%;
+            margin-bottom:1% ;
+
+         }
+         button{
+
+            background-color: blueviolet;
+            color: white;
+        }
+        </style>   
+</body>
+</html>
